@@ -19,6 +19,8 @@
 		06F9B4C11966036B0049875F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 06F9B4A91966036B0049875F /* UIKit.framework */; };
 		06F9B4C91966036B0049875F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 06F9B4C71966036B0049875F /* InfoPlist.strings */; };
 		06F9B4CB1966036B0049875F /* fb_paperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F9B4CA1966036B0049875F /* fb_paperTests.m */; };
+		06F9B4D71966038C0049875F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 06F9B4D51966038C0049875F /* MainViewController.m */; };
+		06F9B4D81966038C0049875F /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 06F9B4D61966038C0049875F /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		06F9B4C61966036B0049875F /* fb-paperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "fb-paperTests-Info.plist"; sourceTree = "<group>"; };
 		06F9B4C81966036B0049875F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		06F9B4CA1966036B0049875F /* fb_paperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fb_paperTests.m; sourceTree = "<group>"; };
+		06F9B4D41966038C0049875F /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ../MainViewController.h; sourceTree = "<group>"; };
+		06F9B4D51966038C0049875F /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
+		06F9B4D61966038C0049875F /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = ../MainViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +114,9 @@
 			children = (
 				06F9B4B41966036B0049875F /* AppDelegate.h */,
 				06F9B4B51966036B0049875F /* AppDelegate.m */,
+				06F9B4D41966038C0049875F /* MainViewController.h */,
+				06F9B4D51966038C0049875F /* MainViewController.m */,
+				06F9B4D61966038C0049875F /* MainViewController.xib */,
 				06F9B4B71966036B0049875F /* Images.xcassets */,
 				06F9B4AC1966036B0049875F /* Supporting Files */,
 			);
@@ -191,6 +199,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Shiva Jaini";
 				TargetAttributes = {
+					06F9B4A11966036B0049875F = {
+						DevelopmentTeam = 8V2H52F4UQ;
+					};
 					06F9B4BC1966036B0049875F = {
 						TestTargetID = 06F9B4A11966036B0049875F;
 					};
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F9B4B01966036B0049875F /* InfoPlist.strings in Resources */,
+				06F9B4D81966038C0049875F /* MainViewController.xib in Resources */,
 				06F9B4B81966036B0049875F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				06F9B4B61966036B0049875F /* AppDelegate.m in Sources */,
+				06F9B4D71966038C0049875F /* MainViewController.m in Sources */,
 				06F9B4B21966036B0049875F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,10 +370,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fb-paper/fb-paper-Prefix.pch";
 				INFOPLIST_FILE = "fb-paper/fb-paper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -370,10 +386,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "fb-paper/fb-paper-Prefix.pch";
 				INFOPLIST_FILE = "fb-paper/fb-paper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -437,6 +456,7 @@
 				06F9B4D01966036B0049875F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		06F9B4D11966036B0049875F /* Build configuration list for PBXNativeTarget "fb-paperTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +465,7 @@
 				06F9B4D31966036B0049875F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
