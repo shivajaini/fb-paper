@@ -1,10 +1,10 @@
 fb-paper
 ========
-+![Alt text](https://raw.githubusercontent.com/shivajaini/fb-paper/master/fb-paper.gif "FB Paper")
+![Alt text](https://raw.githubusercontent.com/shivajaini/fb-paper/master/fb-paper.gif "FB Paper")
 
 
+FB Paper gestures and animations
 
-FB login screen and feed animations
 Q. How many hours did it take to complete?
 
 A. 5 hours
@@ -18,3 +18,5 @@ None.
 
 Q. Open Questions?
 A. None
+
+We will show project mocks in person on Tuesday morning.
